@@ -1,42 +1,53 @@
 Privacy Policy
-We regard the protection and the confidentiality of your data as very important. In this Privacy Policy, we would like to tell you which personal data we collect and what we use it for.
-Below, we'll tells you about the type and extent of and the purposes for which personal data are collected and used. You can call up this information on our website anytime.
+Yousef Mahdy built the EG-News app as an Open Source app. This SERVICE is provided by Yousef Mahdy at no cost and is intended for use as is.
 
-Subject of Data Protection
-The subject of data protection is personal data. These include details such as your name, your postal address, your email address, your telephone number or, where appropriate, even use-data.
+This page is used to inform visitors regarding my policies with the collection, use, and disclosure of Personal Information if anyone decided to use my Service.
 
-Collection and Use of Data
-Automated Data Collection
-When you access our websites, your internet browser automatically transmits data for technical reasons. The following data are stored separately from other data that you may have sent us:
-your date and time of access
-your browser-type and version
-the operating system you use
-the URL of the website you have previously visited
-the quantity of data transmitted
-For technical reasons these data are stored and are not assigned to any identifiable person at any time.
+If you choose to use my Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that I collect is used for providing and improving the Service. I will not use or share your information with anyone except as described in this Privacy Policy.
 
-Data Entered by Users
-You can use our apps both with and without registering. However, you can only access our apps using certain terminals such as an iPhone, iPod, iPad, Windows, Mac or Android. In order to make use of all its advantages, you have to register. To do this, you must enter your email address and select a password. We require these data in order to guarantee that you are able to make full use of our entire offer. We need these and possibly other data not least in order to respond to your wishes, questions and criticism.
-The central function of our apps is task management. You will be able to use this product both online and offline.
-Where our apps are used solely offline, the data you enter will be stored de-centrally on your storage medium. In such a case, we will not be able to access these data.
-If you use our apps in combination with a registered account, all data and tasks entered will be integrated into a database. The purpose of this database is to allow you to use our apps at various different levels and call up your tasks anywhere and at any time. Data are transmitted to the respective terminal using SSL encryption so that your data are transmitted securely.
+The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which are accessible at EG-News unless otherwise defined in this Privacy Policy.
 
-Transfer of Data
-We will not transfer your data to third parties as a matter of course without letting you know in advance or asking for your prior permission. We may only transfer your data to third parties without informing you separately beforehand in the following exceptional cases as explained below:
-If required for investigating the illegal use of our apps or for legal proceedings, personal data will be transferred to the criminal investigation authorities and, if appropriate, to injured third parties. We will only do this if there are concrete indications of illegal and/or abusive behavior. We can only transfer on your personal data if this is used to enforce General Terms and Conditions of Business or other agreements. We are also legally obliged to give certain public authorities information.
-Occasionally we depend on contractually affiliated external companies and external service providers to supply services such as the supply of advertising measures (only if you have given your explicit prior consent), processing payments (PayPal, credit card etc.), storing your data and customer service. In such cases, information is transferred to these companies or individuals in order to enable them to process this information further. We carefully select these external service providers and review them regularly to ensure that your privacy is preserved. The service providers may only use the data for the purposes stipulated by us.
+Information Collection and Use
+
+For a better experience, while using our Service, I may require you to provide us with certain personally identifiable information. The information that I request will be retained on your device and is not collected by me in any way.
+
+Log Data
+
+I want to inform you that whenever you use my Service, in a case of an error in the app I collect data and information (through third-party products) on your phone called Log Data. This Log Data may include information such as your device Internet Protocol (“IP”) address, device name, operating system version, the configuration of the app when utilizing my Service, the time and date of your use of the Service, and other statistics.
 
 Cookies
-our application stores so-called "cookies" in order to be able to offer you a comprehensive range of functions and to make it easier to use our websites. "Cookies" are small files which are stored on your computer with the help of the internet browser. If you do not want to use "cookies", you can prevent "cookies" from being stored on your computer using the corresponding settings on your internet browser. Please note that this may restrict the functional capability and the range of functions of our offer.
-We use cookies and similar technologies for several purposes, including:
-Storing your Preferences and Settings. Settings that enable our websites to operate correctly or that maintain your preferences over time may be stored on your device.
-Sign-in and Authentication. When you sign into a website, we store a unique ID number, and the time you signed in, in an encrypted cookie on your device. This cookie allows you to move from page to page within the site without having to sign in again on each page.
-Security. We use cookies to detect fraud and abuse of our websites.
-Analytics. In order to provide our products, we use cookies and other identifiers to gather usage and performance data. For example, we use cookies to count the number of unique visitors to a web page or service and to develop other statistics about the operations of our products.
-Performance. our application uses cookies for load balancing to ensure that our websites remain up and running.
 
-Deleting Your Data
-If your data are no longer required for the aforementioned purposes, we will delete them. if you want to delete all your data, please contact us by email: jousefmahdy@gmail.com.
+Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers. These are sent to your browser from the websites that you visit and are stored on your device's internal memory.
 
-Amendments to this Privacy Policy
-We reserve the right to amend this Privacy Policy. You can call up the current version of the Privacy Policy at any time https://github.com/YousefMahdy/News_App/edit/main/privacy-policy.md.
+This Service does not use these “cookies” explicitly. However, the app may use third-party code and libraries that use “cookies” to collect information and improve their services. You have the option to either accept or refuse these cookies and know when a cookie is being sent to your device. If you choose to refuse our cookies, you may not be able to use some portions of this Service.
+
+Service Providers
+
+I may employ third-party companies and individuals due to the following reasons:
+
+To facilitate our Service;
+To provide the Service on our behalf;
+To perform Service-related services; or
+To assist us in analyzing how our Service is used.
+I want to inform users of this Service that these third parties have access to their Personal Information. The reason is to perform the tasks assigned to them on our behalf. However, they are obligated not to disclose or use the information for any other purpose.
+
+Security
+
+I value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and I cannot guarantee its absolute security.
+
+Links to Other Sites
+
+This Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by me. Therefore, I strongly advise you to review the Privacy Policy of these websites. I have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.
+
+Children’s Privacy
+
+I do not knowingly collect personally identifiable information from children. I encourage all children to never submit any personally identifiable information through the Application and/or Services. I encourage parents and legal guardians to monitor their children's Internet usage and to help enforce this Policy by instructing their children never to provide personally identifiable information through the Application and/or Services without their permission. If you have reason to believe that a child has provided personally identifiable information to us through the Application and/or Services, please contact us. You must also be at least 16 years of age to consent to the processing of your personally identifiable information in your country (in some countries we may allow your parent or guardian to do so on your behalf).
+
+Changes to This Privacy Policy
+
+I may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any changes by posting the new Privacy Policy on this page.
+
+
+Contact Us
+
+If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at jousefmahy@gmail.com.
