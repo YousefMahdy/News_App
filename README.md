@@ -1,17 +1,11 @@
 # News_App
 
-A new Flutter project.
+(Eg_News) Using BLOC design pattern, News API .users could brows by categories (business, sports, health ...) and search for news.
+User could be in Dark mode or light mode. 
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+![1](https://user-images.githubusercontent.com/37985055/155850802-1539f708-1262-4527-8628-296ff1b3d985.jpeg)  ![2](https://user-images.githubusercontent.com/37985055/155850801-3050f597-59ca-4a44-b03d-586e00be35d6.jpeg)
+![3](https://user-images.githubusercontent.com/37985055/155850800-b74a2caf-aac9-43f7-bfc2-f9e70ddee369.jpeg)  ![4](https://user-images.githubusercontent.com/37985055/155850798-bdaba92c-8c67-4bb8-b23a-aab08214e923.jpeg)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-"# News_App" 
+![5](https://user-images.githubusercontent.com/37985055/155850799-56a7e5ff-fadf-461b-9ab2-0ddb0be65014.jpeg) ![6](https://user-images.githubusercontent.com/37985055/155850797-a53cfa75-c1d0-479c-bd23-7391cc24a0ed.jpeg)  
