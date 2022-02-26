@@ -11,14 +11,14 @@ class NewsLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocConsumer<NewsCubit,NewsStetes>(
+    return BlocConsumer<NewsCubit,NewsStates>(
       listener: (context,state){},
       builder:(context,state){
         NewsCubit cubit =NewsCubit.get(context);
 
         return Scaffold(
           appBar: AppBar(
-            title: Text("news Screen",),
+            title: Text(cubit.category[cubit.current_index]),
             actions: [
               IconButton(
                   onPressed: (){
@@ -41,18 +41,40 @@ class NewsLayout extends StatelessWidget {
           body:cubit.screens[cubit.current_index],
 
           bottomNavigationBar: BottomNavigationBar(
-            items: cubit.navBarItem,
+           // items: cubit.navBarItem,
             // backgroundColor: Colors.black,
             type: BottomNavigationBarType.fixed,
-
             elevation: 15,
              selectedItemColor: Colors.deepOrange,
-
-
              currentIndex: cubit.current_index,
             onTap: (index){
              cubit.changIndex(index);
             },
+            items: [
+              BottomNavigationBarItem(
+              icon: Icon(
+                Icons.business_outlined,
+              ),
+              label: 'Business',
+            ),
+              BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.sports_volleyball_outlined,
+                ),
+                label: 'Sports',
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.health_and_safety_outlined,
+                ),
+                label: 'Health',
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.computer_outlined,
+                ),
+                label: 'Technology',
+              ),],
 
           )
         );

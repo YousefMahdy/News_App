@@ -1,13 +1,10 @@
-
-import 'package:conditional_builder_null_safety/conditional_builder_null_safety.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:News_App/shared/components/components.dart';
-
 import '../../layout/cubit/cubit.dart';
 import '../../layout/cubit/states.dart';
 
-class SportScreen extends StatelessWidget {
+class TechnologyScreen extends StatelessWidget {
 
 
   @override
@@ -15,8 +12,8 @@ class SportScreen extends StatelessWidget {
     return BlocConsumer<NewsCubit,NewsStates>(
       listener: (context,state){},
       builder:  (context,state){
-        List<dynamic> sports=NewsCubit.get(context).sportArticles;
-        return articleBuilder(sports);
+        List<dynamic> technologyArticles=NewsCubit.get(context).technologyArticles;
+        return articleBuilder(technologyArticles);
 
       },
 

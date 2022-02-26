@@ -37,7 +37,7 @@ Widget defaultFormField({
   bool isObSecureText = false,
   required TextInputType keyboardType,
   IconData? prefexIcon,
-  IconData? safexIcon,
+
   required Function validat,
   Function? prefex_pressed,
   Function? onSubmit,
@@ -73,7 +73,8 @@ Widget defaultFormField({
           //print("prefex presssed");
           ,
         ),
-        suffixIcon: Icon(safexIcon)),
+
+    ),
   );
 }
 Widget BuildArticleItem({

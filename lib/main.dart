@@ -35,9 +35,10 @@ class MyApp extends StatelessWidget {
       // ..changDarkMode(isDark)
        ..getBusinessData()
        ..getSportsData()
-       ..getHealthData(),
+       ..getHealthData()
+      ..getTechnologyData(),
 
-      child: BlocConsumer<NewsCubit, NewsStetes>(
+      child: BlocConsumer<NewsCubit, NewsStates>(
           listener: (context, state) {},
           builder: (context, state) {
             NewsCubit cubit = NewsCubit.get(context);
@@ -47,7 +48,8 @@ class MyApp extends StatelessWidget {
               themeMode: cubit.isDark ? ThemeMode.dark : ThemeMode.light,
               debugShowCheckedModeBanner: false,
               home: Directionality(
-                  textDirection: TextDirection.rtl, child: NewsLayout()),
+                  textDirection: TextDirection.rtl,
+                  child: NewsLayout()),
             );
           }),
     );

@@ -12,7 +12,7 @@ class HealthScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocConsumer<NewsCubit,NewsStetes>(
+    return BlocConsumer<NewsCubit,NewsStates>(
       listener: (context,state){},
       builder:  (context,state){
         List<dynamic> healthArticles=NewsCubit.get(context).healthArticles;

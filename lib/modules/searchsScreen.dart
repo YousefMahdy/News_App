@@ -9,9 +9,9 @@ class SearchScreen extends StatelessWidget {
   var searchController = TextEditingController();
   @override
   Widget build(BuildContext context) {
-    return BlocConsumer<NewsCubit, NewsStetes>(
-      listener: (context, stste) {},
-      builder: (context, stste) {
+    return BlocConsumer<NewsCubit, NewsStates>(
+      listener: (context, state) {},
+      builder: (context, state) {
         List<dynamic> searches = NewsCubit.get(context).searchArticles;
         return Scaffold(
           appBar: AppBar(
