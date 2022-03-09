@@ -1,3 +1,4 @@
+import 'package:News_App/shared/cubit/cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:News_App/modules/searchsScreen.dart';
@@ -18,7 +19,24 @@ class NewsLayout extends StatelessWidget {
 
         return Scaffold(
           appBar: AppBar(
-            title: Text(cubit.category[cubit.current_index]),
+
+            leading: IconButton(
+
+                onPressed: (){
+                 // AppCubit.get(context).changLang();
+                AppCubit.get(context).changLang();
+                //  print(cubit.getTexts('category_title1'));
+                 //print(cubit.isEn);
+                },
+                icon:  Icon(
+                    Icons.language_outlined
+
+                )),
+            title: Text(
+                AppCubit.get(context).current_Title().toString()),
+
+
+
             actions: [
               IconButton(
                   onPressed: (){
@@ -30,7 +48,7 @@ class NewsLayout extends StatelessWidget {
                   )),
               IconButton(
                   onPressed: (){
-                    cubit.changDarkMode(!cubit.isDark);
+                    AppCubit.get(context).changDarkMode();
                     },
                   icon:  Icon(
                       Icons.brightness_4_outlined
@@ -48,32 +66,35 @@ class NewsLayout extends StatelessWidget {
              selectedItemColor: Colors.deepOrange,
              currentIndex: cubit.current_index,
             onTap: (index){
+
              cubit.changIndex(index);
+             AppCubit.get(context).changIndex(index);
+
             },
             items: [
               BottomNavigationBarItem(
               icon: Icon(
                 Icons.business_outlined,
               ),
-              label: 'Business',
+              label:AppCubit.get(context).getTexts('category_name1').toString(),
             ),
               BottomNavigationBarItem(
                 icon: Icon(
                   Icons.sports_volleyball_outlined,
                 ),
-                label: 'Sports',
+                label: AppCubit.get(context).getTexts('category_name2').toString(),
               ),
               BottomNavigationBarItem(
                 icon: Icon(
                   Icons.health_and_safety_outlined,
                 ),
-                label: 'Health',
+                label: AppCubit.get(context).getTexts('category_name3').toString(),
               ),
               BottomNavigationBarItem(
                 icon: Icon(
                   Icons.computer_outlined,
                 ),
-                label: 'Technology',
+                label: AppCubit.get(context).getTexts('category_name4').toString(),
               ),],
 
           )

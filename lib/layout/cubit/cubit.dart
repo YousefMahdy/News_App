@@ -2,9 +2,7 @@ import 'package:News_App/modules/technologyScreen/technologyScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:News_App/layout/cubit/states.dart';
-import 'package:News_App/shared/network/local/cache_helper.dart';
 import 'package:News_App/shared/network/remote/dio_Helper.dart';
-
 import '../../modules/HealthScreen/HealthScreen.dart';
 import '../../modules/businessScreen/businessScreen.dart';
 import '../../modules/sportsScreen/sportScreen.dart';
@@ -15,12 +13,13 @@ class NewsCubit extends Cubit<NewsStates> {
   static NewsCubit get(context) => BlocProvider.of(context);
   int current_index = 0;
 
-  List<Widget> screens = [BusinessScreen(), SportScreen(), HealthScreen(),TechnologyScreen()];
-  List<String> category = ['Business', 'Sports', 'Health','Technology'];
-
-  List<BottomNavigationBarItem> navBarItem = [
-
+  List<Widget> screens = [
+    BusinessScreen(),
+    SportScreen(),
+    HealthScreen(),
+    TechnologyScreen()
   ];
+
   changIndex(index) {
     current_index = index;
     emit(ChangBottomNavigatorBar());
@@ -38,15 +37,16 @@ class NewsCubit extends Cubit<NewsStates> {
       'category': 'business',
       'apiKey': '382db3640cc840e788ca380193b096cf'
     }).then((value) {
-     // print(value.data['articles'][0]['title']);
+      // print(value.data['articles'][0]['title']);
       businessArticles = value.data['articles'];
       // print(businessArticles[0]["author"]);
       emit(NewsGetBusinessSuccessState());
     }).catchError((e) {
-      print(' my errorrr $e ');
+      print(e);
       emit(NewsGetBusinessErrorState());
     });
   }
+
   void getSportsData() {
     DioHelper.getData(path: 'v2/top-headlines', query: {
       'country': 'eg',
@@ -58,10 +58,11 @@ class NewsCubit extends Cubit<NewsStates> {
 
       emit(NewsGetSportsSuccessState());
     }).catchError((e) {
-     // print(' error $e ');
+      // print(' error $e ');
       emit(NewsGetSportsErrorState());
     });
   }
+
   void getHealthData() {
     DioHelper.getData(path: 'v2/top-headlines', query: {
       'country': 'eg',
@@ -72,10 +73,11 @@ class NewsCubit extends Cubit<NewsStates> {
 
       emit(NewsGetHealthSuccessState());
     }).catchError((e) {
-     // print(e);
+      // print(e);
       emit(NewsGetHealthErrorState());
     });
   }
+
   void getTechnologyData() {
     DioHelper.getData(path: 'v2/top-headlines', query: {
       'country': 'eg',
@@ -90,35 +92,18 @@ class NewsCubit extends Cubit<NewsStates> {
       emit(NewsGetTechnologyErrorState());
     });
   }
+
   void getSearchData(String value) {
-    DioHelper.getData(
-        path: 'v2/everything',
-        query: {
-        'q':'$value',
+    DioHelper.getData(path: 'v2/everything', query: {
+      'q': '$value',
       'apiKey': '382db3640cc840e788ca380193b096cf'
     }).then((value) {
       searchArticles = value.data['articles'];
 
       emit(NewsGetSearchSuccessState());
     }).catchError((e) {
-
       emit(NewsGetSearchErrorState());
       print(e);
     });
-  }
-
-  bool isDark = false;
-
-  void changDarkMode(bool isDarkStored) {
-
-      isDark = isDarkStored;
-     // print('value  is $isDark');
-      CasheHelper.setBool(key: "isDark", value: isDark).then((value) {
-        // print('value to insert $x');
-        emit(ChangeDarkModeState());
-      }).catchError((e) {
-        //print(e.toString());
-      });
-
   }
 }
